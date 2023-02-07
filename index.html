@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Frame 6.png" alt="logo de alura" >
+    </header>
+    <main>
+        <section>
+            <textarea id="Ingreso" class="text-area" cols="30" rows="10" placeholder="Ingrese aqui el texto"></textarea>
+            <div>
+                <h6 class="informacion"> <iconify-icon icon="dashicons:lock" style="color: #ffffff58" width="15" height="15"></iconify-icon> Solo letras minúsculas sin espacios ni acentos.</h6>
+            </div>
+
+            <div>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+            </div>
+        </section>
+
+        <section>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            </div>
+            <div class="botones">
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+
+    
+    
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
